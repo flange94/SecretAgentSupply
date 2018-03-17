@@ -1,0 +1,128 @@
+/* ************************ */
+/* GENERAL STYLE DEFINTIONS */
+/* ************************ */
+html,
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  background-color: white;
+  color: white;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* *********************** */
+/* HEADER STYLE DEFINTIONS */
+/* *********************** */
+#logobar {
+  background-color: black;
+}
+
+#logobar .container {
+  display: flex;
+  align-items: center;
+  padding: 12px 0 12px 0.5em;
+}
+
+#logobar img {
+height: 1.5em;
+margin-right: 10px;
+}
+
+#bannerbox {
+  height: 25em;
+  background: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg") center center / cover no-repeat;;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#bannertext {
+  position: relative;
+  background: black;
+  width: 20em;
+  height: 10em;
+  padding: 2em 3em;
+  top: 9em;
+}
+
+/* **************************** */
+/* Navigation inside the header */
+/* **************************** */
+nav {
+  position: relative;
+  display: block;
+  background-color: firebrick;
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75em 0px;
+    list-style: none;
+}
+
+nav .container a {
+  color: white;
+  text-decoration: none;
+}
+
+nav .mobile_menu {
+  display: none;
+}
+
+/* ************************************* */
+/* responsive definitions for the header */
+/* ************************************* */
+
+@media only screen and (max-width: 1080px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+
+@media only screen and (max-width: 780px) {
+  nav .mobile_menu {
+    display: block;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  nav .menu {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  nav {
+    top: 15px;
+  }
+  
+  .container {
+    max-width: 100%;
+  }
+
+  #bannerbox {
+    height: 15em;
+    margin: 0;
+  }
+
+  #bannertext {
+    width: 100%;
+    padding: 1em 2em;
+    height: auto;
+  }
+
+  #bannertext h4 {
+    font-size: 0.77em;
+  }
+
+  #bannertext h1 {
+    font-size: 1.1em;
+  }
+}
