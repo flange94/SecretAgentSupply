@@ -102,7 +102,7 @@ nav .mobile_menu {
   nav {
     top: 15px;
   }
-  
+
   .container {
     max-width: 100%;
   }
@@ -125,4 +125,59 @@ nav .mobile_menu {
   #bannertext h1 {
     font-size: 1.1em;
   }
+}
+
+/* ************************* */
+/* CONTENT STYLE DEFINITIONS */
+/* ************************* */
+
+.products,
+.business_info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product {
+  width: 30%;
+  margin: 3em 0;
+}
+
+.product_image {
+  border: 4px solid black;
+  padding: 2em 0;
+  height: 9em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product_image img {
+  max-width: 8em;
+}
+
+.product_text {
+  display: block;
+  background-color: black;
+  text-align: center;
+  padding: 0.5em;
+}
+
+.business_info {
+  margin-bottom: 4em;
+}
+
+.info_item {
+  width: 35%;
+}
+
+.info_text_head {
+  display: block;
+  background-color: black;
+  padding: 1em 0 1em 2em;
+}
+
+.info_text {
+  display: block;
+  color: black;
+  padding: 1em;
 }
