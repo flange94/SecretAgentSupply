@@ -81,12 +81,9 @@ nav .mobile_menu {
 
 @media only screen and (max-width: 1080px) {
   .container {
-    max-width: 80%;
+    width: 100%;
   }
-}
 
-
-@media only screen and (max-width: 780px) {
   nav .mobile_menu {
     display: block;
     cursor: pointer;
@@ -180,4 +177,40 @@ nav .mobile_menu {
   display: block;
   color: black;
   padding: 1em;
+}
+
+/* ****************************** */
+/* RESPONSIVE CONTENT DEFINITIONS */
+/* ****************************** */
+
+@media only screen and (max-width: 1080px) {
+
+  .product {
+    width: 47%;
+  }
+
+  .product_glasses {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+
+  .product {
+    width: 90%;
+    margin: 3em auto;
+  }
+
+  .product_watch {
+    display: none;
+  }
+
+  .business_info {
+    display: block;
+  }
+
+  .info_item {
+    width: 90%;
+    margin: 0.5em auto;
+  }
 }
